@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<TALLERVEHICULOS.Models.Brand>
+
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h2>Lista de marcas</h2>
+        <a asp-action="Nuevo" class="btn btn-success mb-3">Nuevo</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NombreMarca</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>
+                            <a 
+                                asp-controller="Brand"
+                                asp-action="Editar" 
+                            asp-route-id="@item.Id"
+                               class="btn btn-outline-warning">
+                            Editar</a>
+
+                        <a asp-controller="Brand"
+                           asp-action="Eliminar"
+                           asp-route-id="@item.Id"
+                           onclick="return confirmar()"
+                           class="btn btn-danger">
+                            Eliminar
+                        </a>
+                        </td>
+                    </tr>
+
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        function Confirmar() {
+            return confirmar("Seguro?")
+        }
+
+    </script>
+
+}

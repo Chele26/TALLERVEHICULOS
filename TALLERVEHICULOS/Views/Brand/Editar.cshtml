@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model TALLERVEHICULOS.Models.Brand;
+
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h2>Editar Modelo</h2>
+        <form asp-controller="Brand" asp-action="Editar"  method="post">
+            <input asp-for="Id" type="Hidden" />
+            <div class="mb-3">
+                <label for="Name">Nombre de modelo</label>
+                <input class=" form-control" asp-for ="Name" type ="Text" />
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+                <a asp-action="Lista" class="btn btn-warning">Volver</a>
+            </div>
+        </form>
+    </div>
+</div>
+

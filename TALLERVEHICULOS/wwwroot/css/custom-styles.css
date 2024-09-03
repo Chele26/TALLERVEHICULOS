@@ -1,0 +1,93 @@
+﻿/* General Styles */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Table Styles */
+.table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+    .table th, .table td {
+        border-color: #333;
+    }
+
+/* Button Styles */
+.btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Success Button */
+.btn-success {
+    background-color: #00e676;
+    color: #fff;
+}
+
+    .btn-success:hover {
+        background-color: #00c853;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+/* Primary Button */
+.btn-primary {
+    background-color: #1e88e5;
+    color: #fff;
+}
+
+    .btn-primary:hover {
+        background-color: #1976d2;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+/* Info Button */
+.btn-info {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+    .btn-info:hover {
+        background-color: #00acc1;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+/* Danger Button */
+.btn-danger {
+    background-color: #f44336;
+    color: #fff;
+}
+
+    .btn-danger:hover {
+        background-color: #e53935;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+/* Warning Button */
+.btn-warning {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+    .btn-warning:hover {
+        background-color: #f57c00;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+/* Custom Button Styles */
+.btn-custom {
+    background: linear-gradient(45deg, #f06292, #ba68c8);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+    .btn-custom:hover {
+        background: linear-gradient(45deg, #ec407a, #ab47bc);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
